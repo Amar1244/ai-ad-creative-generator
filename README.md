@@ -27,38 +27,6 @@ Generative AI · LLM · Prompt engineering · AI image generation · Ad creative
 - Google Sheets (service account) for activity logs
 - `streamlit-authenticator` and `bcrypt` for login
 
-## Run Locally
-
-1. Clone the repo and install dependencies:
-
-   ```bash
-   git clone https://github.com/Amar1244/ai-ad-creative-generator.git
-   cd ai-ad-creative-generator
-   pip install -r requirements.txt
-   ```
-
-2. Copy the example secrets file and fill in your own values:
-
-   ```bash
-   cp .streamlit/secrets.toml.example .streamlit/secrets.toml
-   ```
-
-   | Key | Purpose |
-   | :--- | :--- |
-   | `GROQ_API_KEY` | Ad copy and chat (Groq) |
-   | `FAL_API_KEY` | Image generation (fal.ai) |
-   | `AUTH_COOKIE_KEY` | Random secret for login cookies |
-   | `[google_sheets]` | Spreadsheet ID and worksheet name for activity logs |
-   | `[gcp_service_account]` | Google service account credentials |
-
-   Never commit `secrets.toml`. Keep it in `.gitignore`.
-
-3. Start the app:
-
-   ```bash
-   streamlit run app.py
-   ```
-
 ## Project Structure
 
 | Path | Purpose |
